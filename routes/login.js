@@ -7,9 +7,9 @@ var SEED = require('../config/config').SEED;
 var app = express();
 var Usuario = require('../models/usuario');
 
-const { GoogleAuth } = require('google-auth-library');
-//var GoogleAuth = require('google-auth-library');
-var auth = new GoogleAuth;
+
+var GoogleAuth = require('google-auth-library');
+//var auth = new GoogleAuth;
 
 const GOOGLE_CLIENT_ID = require('../config/config').GOOGLE_CLIENT_ID;
 const GOOGLE_SECRET = require('../config/config').GOOGLE_SECRET;
